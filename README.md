@@ -1,6 +1,6 @@
 # Swiggy New Feature - Photo-Based Food Search
 
-![Swiggy Photo Search](./docs/images/photo-search-banner.png)
+![Swiggy Photo Search](https://github.com/yashhhYB/swiggy/blob/450b91ecee2f6be5cb30d9cb62076d2831b07aeb/website%20front.png)
 
 ## Overview
 This project introduces a photo-based food search feature to the Swiggy platform. Users can upload a photo of a dish, and the system will classify the dish and return a list of restaurants serving that dish.
