@@ -2,6 +2,10 @@
 
 ![Swiggy Photo Search](https://github.com/yashhhYB/swiggy/blob/450b91ecee2f6be5cb30d9cb62076d2831b07aeb/website%20front.png)
 
+## App 
+
+![Swiggy Photo Search](https://github.com/yashhhYB/swiggy/blob/556559ca9d5874e6f2c1061d6bd5d3e9e6ef9fe6/app.png)
+
 ## Overview
 This project introduces a photo-based food search feature to the Swiggy platform. Users can upload a photo of a dish, and the system will classify the dish and return a list of restaurants serving that dish.
 
@@ -47,15 +51,18 @@ swiggy-new-feature/
 
 
 ## Setup Instructions
-![Swiggy Photo Search](https://github.com/yashhhYB/swiggy/blob/3ccd2b1b9d4c9d6bd024e87e20817d640f0811c7/backend.png)
 
 ### Backend
+![Swiggy Photo Search](https://github.com/yashhhYB/swiggy/blob/3ccd2b1b9d4c9d6bd024e87e20817d640f0811c7/backend.png)
+
 1. Navigate to `swiggy/apps/photo-search-service`.
 2. Ensure Node.js version is 18.x (LTS).
 3. Run `npm install` to install dependencies.
 4. Run `npm start` to start the backend server.
 
 ### Frontend
+![Swiggy Photo Search](https://github.com/yashhhYB/swiggy/blob/556559ca9d5874e6f2c1061d6bd5d3e9e6ef9fe6/app.png)
+
 1. Navigate to `swiggy/apps/swiggy-app`.
 2. Run `npm install --legacy-peer-deps` to install dependencies.
 3. Run `npm start` to start the frontend development server.
