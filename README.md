@@ -47,6 +47,7 @@ swiggy-new-feature/
 
 
 ## Setup Instructions
+![Swiggy Photo Search](https://github.com/yashhhYB/swiggy/blob/3ccd2b1b9d4c9d6bd024e87e20817d640f0811c7/backend.png)
 
 ### Backend
 1. Navigate to `swiggy/apps/photo-search-service`.
