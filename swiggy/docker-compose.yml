@@ -1,0 +1,21 @@
+version: '3.6'
+services:
+  postgres-restaurant:
+    image: postgres
+    restart: unless-stopped
+  
+  postgres-user:
+    image: postgres
+    restart: unless-stopped
+
+  postgres-order:
+    image: postgres
+    restart: unless-stopped
+
+  postgres-cart:
+    image: postgres
+    restart: unless-stopped
+
+  rmq-listerner:
+    image: rabbitmq:3-management-alpine
+  

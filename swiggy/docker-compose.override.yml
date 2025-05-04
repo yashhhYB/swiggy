@@ -1,0 +1,57 @@
+version: '3'
+services:
+  rmq-listerner:
+    ports:
+        - 5672:5672
+        - 15672:15672
+    volumes:
+        - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+        - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+
+  postgres-restaurant:
+    environment:
+      - POSTGRES_USER=api
+      - POSTGRES_PASSWORD=development_pass
+      - POSTGRES_MULTIPLE_DATABASES="restaurant-api","restaurant-api-testing"
+    volumes:
+      - ./docker-utils:/docker-entrypoint-initdb.d
+      - restaurant_api_data:/data/postgres
+    ports:
+      - 5435:5432   
+  postgres-cart:
+    environment:
+      - POSTGRES_USER=api
+      - POSTGRES_PASSWORD=development_pass
+      - POSTGRES_MULTIPLE_DATABASES="cart-api","cart-api-testing"
+    volumes:
+      - ./docker-utils:/docker-entrypoint-initdb.d
+      - cart_api_data:/data/postgres
+    ports:
+      - 5432:5432          
+  postgres-user:
+    environment:
+      - POSTGRES_USER=api
+      - POSTGRES_PASSWORD=development_pass
+      - POSTGRES_MULTIPLE_DATABASES="user-api","user-api-testing"
+    volumes:
+      - ./docker-utils:/docker-entrypoint-initdb.d
+      - user_api_data:/data/postgres
+    ports:
+      - 5433:5432  
+  
+  postgres-order:
+    environment:
+      - POSTGRES_USER=api
+      - POSTGRES_PASSWORD=development_pass
+      - POSTGRES_MULTIPLE_DATABASES="order-api","order-api-testing"
+    volumes:
+      - ./docker-utils:/docker-entrypoint-initdb.d
+      - order_api_data:/data/postgres
+    ports:
+      - 5438:5432          
+volumes:
+  restaurant_api_data: {}
+  user_api_data: {}
+  cart_api_data: {}
+  order_api_data: {}
+

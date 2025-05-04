@@ -1,0 +1,47 @@
+.DS_Store
+node_modules
+/dist
+build
+coverage
+.vscode
+
+/tests/e2e/videos/
+/tests/e2e/screenshots/
+
+# local env files
+.env.local
+.env.development
+.env.production
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
+.vercel
+.output
+/packages/**/build
+/packages/**/dist
+/apps/**/build
+/apps/**/dist
+/infra/**/build
+/infra/**/dist
