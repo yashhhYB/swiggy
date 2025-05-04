@@ -61,7 +61,7 @@ swiggy-new-feature/
 4. Run `npm start` to start the backend server.
 
 ### Frontend
-![Swiggy Photo Search](https://github.com/yashhhYB/swiggy/blob/556559ca9d5874e6f2c1061d6bd5d3e9e6ef9fe6/app.png)
+![Swiggy Photo Search](https://github.com/yashhhYB/swiggy/blob/c60b20471e72e41d87b85c51fcc2b6c1bedc5a4e/how%20works.png)
 
 1. Navigate to `swiggy/apps/swiggy-app`.
 2. Run `npm install --legacy-peer-deps` to install dependencies.
